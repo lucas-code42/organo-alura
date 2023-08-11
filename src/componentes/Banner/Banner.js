@@ -1,6 +1,19 @@
+// import './Banner.css'
+
+// function Banner() {
+//     // JSX
+//     return (
+//         <header className="banner">
+//             <img src="/imagens/banner.png" alt="Banner principal" />
+//         </header>
+//     )
+// }
+
+// export default Banner;
+
 import './Banner.css'
 
-function Banner() {
+export const Banner = () => {
     // JSX
     return (
         <header className="banner">
@@ -8,5 +21,3 @@ function Banner() {
         </header>
     )
 }
-
-export default Banner;

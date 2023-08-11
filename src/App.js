@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import Banner from './componentes/Banner/Banner'; // importantdo o nosso componente
+import Banner from './componentes/Banner'; // importantdo o nosso componente
+import CampoTexto from './componentes/CampoTexto'; // com um index dentro da pasta podemos omitir o nome do arquivo
 
 function App() {
   return (
     <div className="App">
       <Banner /> {/* aqui estamos chamando nosso componente criado */}
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CampoTexto />
     </div>
   );
 }
