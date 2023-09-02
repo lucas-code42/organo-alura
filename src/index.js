@@ -5,7 +5,7 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode> {/* ajuda com warnings*/}
+  <React.StrictMode>
     <App />
-  // </React.StrictMode> faz renderizações adicionais
+  </React.StrictMode>
 );

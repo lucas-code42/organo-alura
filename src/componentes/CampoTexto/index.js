@@ -4,10 +4,10 @@ const CampoTexto = (props) => {
     console.log(props.label)
     return (
         <div className="campo-texto">
-            <label>{
-                props.label}
+            <label>
+                {props.label}
             </label>
-            <input placeholder={props.placeholder}/>
+            <input placeholder={props.placeholder} />
         </div>
     )
 }
