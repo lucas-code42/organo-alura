@@ -5,19 +5,11 @@ import Botao from "../Botao";
 import { useState } from "react";
 
 const Formulario = (props) => {
-    const times = [
-        "Programação",
-        "Front-end",
-        "Data-Science",
-        "Devops",
-        "Mobile",
-        "UI & UX"
-    ];
 
     const [nome, setNome] = useState("");
     const [cargo, setCargo] = useState("");
     const [imagem, setImagem] = useState("");
-    const [time, setTime] = useState(times[0]);
+    const [time, setTime] = useState(props.times[0]);
 
     const aoSalvar = (evento) => {
         evento.preventDefault();
@@ -57,7 +49,7 @@ const Formulario = (props) => {
                 <ListaSuspensa
                     obrigatorio={true}
                     label="Time"
-                    itens={times}
+                    itens={props.times}
                     valor={time}
                     aoAlterado={valor => setTime(valor)}
                 />
